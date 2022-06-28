@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>54.0</apiVersion>
+    <decisions>
+        <description>Created By Team</description>
+        <name>Check_Value_of_FP_status_with_DealTeam</name>
+        <label>Check Value of FP status with DealTeam</label>
+        <locationX>314</locationX>
+        <locationY>335</locationY>
+        <defaultConnector>
+            <targetReference>Status_Update_to_Adjustment_Needed</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>If Adjustments Required</defaultConnectorLabel>
+        <rules>
+            <name>If_Approved</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.FP_status_with_DealTeam__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Approved</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Status_to_Approved</targetReference>
+            </connector>
+            <label>If Approved</label>
+        </rules>
+        <rules>
+            <name>If_Declined</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.FP_status_with_DealTeam__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Declined</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Status_Update_to_Declined</targetReference>
+            </connector>
+            <label>If Declined</label>
+        </rules>
+    </decisions>
+    <description>Created By Team</description>
+    <interviewLabel>FP_StatusChange_ApprovalDealTeam {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>FP_StatusChange_ApprovalDealTeam</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <description>Created By Team</description>
+        <name>Status_Update_to_Adjustment_Needed</name>
+        <label>Status Update to Adjustment Needed</label>
+        <locationX>578</locationX>
+        <locationY>455</locationY>
+        <inputAssignments>
+            <field>LLC_BI__Status__c</field>
+            <value>
+                <stringValue>FP adjustment required by DealTeam</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Approved By Team</description>
+        <name>Status_Update_to_Declined</name>
+        <label>Status Update to Declined</label>
+        <locationX>314</locationX>
+        <locationY>455</locationY>
+        <inputAssignments>
+            <field>LLC_BI__Status__c</field>
+            <value>
+                <stringValue>FP Declined by DealTeam</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Created By Team</description>
+        <name>Update_Status_to_Approved</name>
+        <label>Update Status to Approved</label>
+        <locationX>50</locationX>
+        <locationY>455</locationY>
+        <inputAssignments>
+            <field>LLC_BI__Status__c</field>
+            <value>
+                <stringValue>FP Approved by DealTeam</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>188</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_Value_of_FP_status_with_DealTeam</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>FP_status_with_DealTeam__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>LLC_BI__Loan__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

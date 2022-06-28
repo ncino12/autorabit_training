@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>World_Bank_Classification__c</fullName>
+    <externalId>false</externalId>
+    <label>World Bank Classification</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>LIC (Low income country)</fullName>
+                <default>false</default>
+                <label>LIC (Low income country)</label>
+            </value>
+            <value>
+                <fullName>LMIC (Low middle income country)</fullName>
+                <default>false</default>
+                <label>LMIC (Low middle income country)</label>
+            </value>
+            <value>
+                <fullName>UMIC (Upper-middle income country)</fullName>
+                <default>false</default>
+                <label>UMIC (Upper-middle income country)</label>
+            </value>
+            <value>
+                <fullName>HIC (High income country)</fullName>
+                <default>false</default>
+                <label>HIC (High income country)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

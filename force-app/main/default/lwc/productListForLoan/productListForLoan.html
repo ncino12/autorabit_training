@@ -1,0 +1,17 @@
+<template>
+    <template if:true={loading}>
+        <div class="exampleHolder">
+          <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+        </div>
+      </template>
+      
+    <template if:true={productList}>
+      <div class='custom-cont'>
+        <lightning-datatable data={productList} columns={columns} key-field="Id" >
+        </lightning-datatable>
+      </div>
+        
+        <lightning-button variant="success" label="Save" title="Successful action" onclick={getSelectedRows} class="slds-m-left_x-small"></lightning-button>
+    </template>
+   
+</template>

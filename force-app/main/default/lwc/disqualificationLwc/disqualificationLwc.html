@@ -1,0 +1,27 @@
+<template>
+
+
+    <lightning-quick-action-panel header="Disqualify Loan">
+      <lightning-record-edit-form object-api-name="LLC_BI__Loan__c" record-id={recordId} mode="edit" onsuccess={handlesuccess} >
+          <lightning-messages></lightning-messages>
+          
+          <lightning-input-field onchange={handleReasonChange}  field-name="Loan_Disqualification_Reason__c"> </lightning-input-field>
+          <lightning-input-field onchange={handleCommentChange} class="comment-sec" field-name="Disqualification_Comments__c"  required> </lightning-input-field>
+          
+      </lightning-record-edit-form>
+      <lightning-button
+      type="submit"
+      name="update"
+      label="Update"
+      onclick={handleclick}></lightning-button>
+      <lightning-button variant="neutral" label="Cancel" onclick={closeAction}></lightning-button>
+    
+    </lightning-quick-action-panel> 
+    
+    <template if:true={updating}>
+      <div class="exampleHolder">
+        <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+      </div>
+    </template>
+    
+    </template>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Reserve Budget</label>
+    <protected>false</protected>
+    <values>
+        <field>Api_Login__c</field>
+        <value xsi:type="xsd:string">321</value>
+    </values>
+    <values>
+        <field>Endpoint__c</field>
+        <value xsi:type="xsd:string">https://ireland2-syncapi.sandbox.mpo.mambu.com/api/1/json</value>
+    </values>
+    <values>
+        <field>Label__c</field>
+        <value xsi:type="xsd:string">Reserve Budget</value>
+    </values>
+    <values>
+        <field>Named_Credentials__c</field>
+        <value xsi:type="xsd:string">Budget_Reserve</value>
+    </values>
+    <values>
+        <field>Process_Id__c</field>
+        <value xsi:type="xsd:string">23449</value>
+    </values>
+    <values>
+        <field>Service_name__c</field>
+        <value xsi:type="xsd:string">budgetReserve api</value>
+    </values>
+    <values>
+        <field>Timeout__c</field>
+        <value xsi:type="xsd:double">120000.0</value>
+    </values>
+    <values>
+        <field>Username__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>password__c</field>
+        <value xsi:type="xsd:string">t6Ps5ZqJfyX9yT9zPtpJnx4BJqVXPeMlLiyLSIGlvkXyqeBd3B</value>
+    </values>
+</CustomMetadata>

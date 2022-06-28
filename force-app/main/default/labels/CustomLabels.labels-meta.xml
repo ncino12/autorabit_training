@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Budget_Reserve</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Budget Reserve</shortDescription>
+        <value>Reserve Budget</value>
+    </labels>
+    <labels>
+        <fullName>Loan_Creation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Loan Creation</shortDescription>
+        <value>Loan Creation</value>
+    </labels>
+    <labels>
+        <fullName>Release_Budget</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Release Budget</shortDescription>
+        <value>Release Budget</value>
+    </labels>
+</CustomLabels>

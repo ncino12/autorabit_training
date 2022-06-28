@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Government_Guaranteed_Record_Type</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>Loan_Layout</compactLayoutAssignment>
+    <description>This Record Type will Apply to Government Guaranteed Loans</description>
+    <label>Government Guaranteed Record Type</label>
+</RecordType>

@@ -1,0 +1,39 @@
+<template>
+        <div class="top-container">
+                    <lightning-card title="Budget Summary">
+                        <div class="slds-grid">
+                            <div class="slds-col slds-size_1-of-5">
+                                <label for="budget-name">Budget Name</label><br>
+                                <a id="budget-name" onclick={handleOpenBudget}>{budgetName}</a> <br>
+                                <label for="percent-hard-cost">Percent Hard Costs</label><br>
+                                <p id="percent-hard-cost">{percentHardCosts}</p> 
+                            </div>
+                            <div class="slds-col slds-size_1-of-5">
+                                <label for="total-budget-amount">Total Budget Amount</label><br>
+                                <p id="total-budget-amount">{amountField}</p><br>
+                                <label for="percent-soft-costs">Percent Soft Costs</label><br>
+                                <p id="percent-soft-costs">{percentSoftCosts}</p>
+                            </div>
+                            <div class="slds-col slds-size_1-of-5">
+                                <label for="total-allocated">Total Allocated</label><br>
+                                <p id="total-allocated">{allocatedAmount}</p><br>
+                                <label for="percent-other-costs">Percent Other Costs</label><br>
+                                <p id="percent-other-costs">{percentOtherCosts}</p>
+                            </div>
+                            <div class="slds-col slds-size_1-of-5">
+                                <label for="total-remaining">Total Remaining</label><br>
+                                <p id="total-remaining">{remainingAmount}</p><br>
+                                <label for="percent-remaining">Percent Remaining</label><br>
+                                <p id="percent-remaining">{percentRemaining}</p>
+                            </div>
+                            <div class="slds-col slds-size_1-of-5">
+                                <label for="percent-allocated">Percent Allocated</label><br>
+                                <p id="percent-allocated">{percentAllocated}</p><br>
+                            </div>
+                        </div>
+                    </lightning-card>
+            </div>
+                
+        
+       
+</template>

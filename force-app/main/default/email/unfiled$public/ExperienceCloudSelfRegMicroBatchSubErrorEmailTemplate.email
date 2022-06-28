@@ -1,0 +1,5 @@
+Er is een probleem opgetreden bij uw registratie voor {!Community_Name}.
+              Los de volgende fout op: {!SelfReg_MicroBatch_Error}
+              Ga naar {!Community_Url} om het opnieuw te proberen of neem contact op met uw beheerder voor hulp.
+              Met vriendelijke groet,
+              {!Organization.Name}

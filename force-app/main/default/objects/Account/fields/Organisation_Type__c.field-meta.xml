@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Organisation_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Organisation Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Startups</fullName>
+                <default>false</default>
+                <label>Startups</label>
+            </value>
+            <value>
+                <fullName>SME</fullName>
+                <default>false</default>
+                <label>SME</label>
+            </value>
+            <value>
+                <fullName>Corporate</fullName>
+                <default>false</default>
+                <label>Corporate</label>
+            </value>
+            <value>
+                <fullName>Financial Institution</fullName>
+                <default>false</default>
+                <label>Financial Institution</label>
+            </value>
+            <value>
+                <fullName>Special Purpose Vehicle​</fullName>
+                <default>false</default>
+                <label>Special Purpose Vehicle​</label>
+            </value>
+            <value>
+                <fullName>Sovereign​</fullName>
+                <default>false</default>
+                <label>Sovereign​</label>
+            </value>
+            <value>
+                <fullName>Investment Fund Debt​</fullName>
+                <default>false</default>
+                <label>Investment Fund Debt​</label>
+            </value>
+            <value>
+                <fullName>Investment Fund Equity​</fullName>
+                <default>false</default>
+                <label>Investment Fund Equity​</label>
+            </value>
+            <value>
+                <fullName>Holding company</fullName>
+                <default>false</default>
+                <label>Holding company</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

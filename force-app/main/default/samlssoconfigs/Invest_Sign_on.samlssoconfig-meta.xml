@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SamlSsoConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <identityLocation>SubjectNameId</identityLocation>
+    <identityMapping>FederationId</identityMapping>
+    <issuer>https://sts.windows.net/339c8382-a062-432b-8e29-3fa758abd5d1</issuer>
+    <loginUrl>https://login.microsoftonline.com/339c8382-a062-432b-8e29-3fa758abd5d1/saml2</loginUrl>
+    <logoutUrl>https://login.microsoftonline.com/339c8382-a062-432b-8e29-3fa758abd5d1/saml2</logoutUrl>
+    <name>Invest Sign on</name>
+    <oauthTokenEndpoint>https://investinternational--clone.my.salesforce.com/services/oauth2/token</oauthTokenEndpoint>
+    <redirectBinding>true</redirectBinding>
+    <requestSignatureMethod>1</requestSignatureMethod>
+    <requestSigningCertId>0P11j000001L5ec</requestSigningCertId>
+    <salesforceLoginUrl>https://investinternational--clone.my.salesforce.com</salesforceLoginUrl>
+    <samlEntityId>https://investinternational--demo.lightning.force.com/</samlEntityId>
+    <samlVersion>SAML2_0</samlVersion>
+    <useConfigRequestMethod>true</useConfigRequestMethod>
+    <userProvisioning>false</userProvisioning>
+    <validationCert>MIIC8DCCAdigAwIBAgIQImKZj4UZqJBHkXD74UZR+jANBgkqhkiG9w0BAQsFADA0MTIwMAYDVQQDEylNaWNyb3NvZnQgQXp1cmUgRmVkZXJhdGVkIFNTTyBDZXJ0aWZpY2F0ZTAeFw0yMjA1MTMxMzA2MDdaFw0yNTA1MTMxMzA2MDdaMDQxMjAwBgNVBAMTKU1pY3Jvc29mdCBBenVyZSBGZWRlcmF0ZWQgU1NPIENlcnRpZmljYXRlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArci9P/Co3pEKdzGgQJoe/Jp9BYCWwpHe+iquZmD8WDLk2DiKm051Ku1/1zmuajT9FDMad5m+Vw8dzpcLLiCGabDKTov54ILNtLFAGYRE602F8R3EEY0l9uBWdfBlpDR9vdZaW5oSk+d0A416MGJ56Mw/4wjSvnWvJN78LAGl040iN9SEcmJQBloOmhe/VCgNCg9cD2+A6/a8TfoPsFBlH9NRRXcU6WM9y5acCOcPdht2LAy5i8PRyL8KgajeR+GO1ou2x9eyrj3dBzd2+o9DC6clKD68MA7puu1B/hn+rN5bMwbNrA0EXFRzVOulCnUHzTS5MoJHwkJc87YIPidwyQIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQAFnPb7IdqGKMNPo32JDoRTZta8UWbvaaMPA6bEvcdf2WdttQNfFeORz6zLaAlbMwsLp8n55lQLcOBqD6jlWdP3dHFubQQNErvuUVmX32X+7XuFApAPQnFoPzpyOhoeJjdflVDJxDRQZ11nbXTt86KnSI4aaEkFegnHQc/ys1Tw2S8IffhEo7u5OTiZ9gZK63khaS7gY2+djINKS6wRFgqmht4KTwBnZwGvuh0qogQ+ANQ58Xiwy+RwyXSx3seyrrVGc2VnFlx4Jw+v5cDkn6hs7+lHCLh/eGONjOLxkoj7MzUI+DWJmrX/hrhbUQl4mTxu8gt/iOVZ/PmuCqxEqMRh</validationCert>
+</SamlSsoConfig>

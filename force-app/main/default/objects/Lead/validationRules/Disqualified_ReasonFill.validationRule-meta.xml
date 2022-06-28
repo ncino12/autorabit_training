@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Disqualified_ReasonFill</fullName>
+    <active>true</active>
+    <description>This rule is to make sure that the disqualification reason is filled while selecting the stage as &apos;Disqualified&apos;</description>
+    <errorConditionFormula>AND(ISPICKVAL(Status, &apos;Unqualified&apos;) ,( Disqualification_reason__c=&quot;&quot;))</errorConditionFormula>
+    <errorMessage>Please enter the disqualification reason by expanding the stage path.</errorMessage>
+</ValidationRule>

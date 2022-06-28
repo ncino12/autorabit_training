@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>This is the default Gold Standard App from Professional Services Master Org.</description>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>nCino LOS</label>
+    <navType>Standard</navType>
+    <tabs>standard-home</tabs>
+    <tabs>nRE__Referral__c</tabs>
+    <tabs>standard-Opportunity</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>LLC_BI__Product_Package__c</tabs>
+    <tabs>LLC_BI__Loan__c</tabs>
+    <tabs>standard-Contact</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>standard-Dashboard</tabs>
+    <tabs>Conditions__c</tabs>
+    <tabs>nFORCE__Screen_Section__c</tabs>
+    <tabs>Error_Logs__c</tabs>
+    <tabs>Installment__c</tabs>
+    <tabs>LLC_BI__Covenant__c</tabs>
+    <tabs>LLC_BI__Loan_Covenant__c</tabs>
+    <tabs>LLC_BI__Covenant_Compliance2__c</tabs>
+    <tabs>LLC_BI__Account_Covenant__c</tabs>
+    <tabs>LLC_BI__Covenant_Compliance__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>nCino_PSO_Lightning_UtilityBar</utilityBar>
+</CustomApplication>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Third_Party_Reports</fullName>
+    <active>true</active>
+    <description>Record Type to specify Third Party Report Service Mgmt Details</description>
+    <label>Third Party Reports</label>
+</RecordType>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sector_Industry__c</fullName>
+    <externalId>false</externalId>
+    <label>Sector/Industry</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Agriculture &amp; Food</fullName>
+                <default>false</default>
+                <label>Agriculture &amp; Food</label>
+            </value>
+            <value>
+                <fullName>Climate &amp; Renewable Energy</fullName>
+                <default>false</default>
+                <label>Climate &amp; Renewable Energy</label>
+            </value>
+            <value>
+                <fullName>Health</fullName>
+                <default>false</default>
+                <label>Health</label>
+            </value>
+            <value>
+                <fullName>Sustainable manufacturing</fullName>
+                <default>false</default>
+                <label>Sustainable manufacturing</label>
+            </value>
+            <value>
+                <fullName>Water &amp; Infrastructure</fullName>
+                <default>false</default>
+                <label>Water &amp; Infrastructure</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>standard-home</defaultLandingTab>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <tabs>standard-Chatter</tabs>
+    <tabs>standard-UserProfile</tabs>
+    <tabs>standard-OtherUserProfile</tabs>
+    <tabs>standard-CollaborationGroup</tabs>
+    <tabs>standard-File</tabs>
+    <tabs>DM_Admin</tabs>
+    <tabs>nFORCE__Route_Group__c</tabs>
+    <tabs>LLC_BI__Covenant2__c</tabs>
+    <tabs>LLC_BI__Requirement__c</tabs>
+    <tabs>LLC_BI__Product_Feature__c</tabs>
+    <tabs>LLC_BI__Transaction_Request_Aggregate__c</tabs>
+    <tabs>LLC_BI__LoanTeam__c</tabs>
+    <tabs>Conditions__c</tabs>
+    <tabs>nFORCE__Screen_Section__c</tabs>
+    <tabs>Error_Logs__c</tabs>
+    <tabs>Installment__c</tabs>
+    <tabs>LLC_BI__Covenant__c</tabs>
+    <tabs>LLC_BI__Loan_Covenant__c</tabs>
+    <tabs>LLC_BI__Covenant_Compliance2__c</tabs>
+    <tabs>LLC_BI__Account_Covenant__c</tabs>
+    <tabs>LLC_BI__Covenant_Compliance__c</tabs>
+</CustomApplication>

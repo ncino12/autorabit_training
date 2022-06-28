@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AuthProvider xmlns="http://soap.sforce.com/2006/04/metadata">
+    <authorizeUrl>https://account-d.docusign.com/OAuth/auth</authorizeUrl>
+    <consumerKey>e47ff2e9-7b57-4d99-872a-13e5843d1970</consumerKey>
+    <consumerSecret>PqtBLdVckZEuQG4rFcoWNGhEttRvu+cH659qNvyXNcKI6RcmXtOkbg==</consumerSecret>
+    <defaultScopes>signature</defaultScopes>
+    <friendlyName>DocuSign Sandbox</friendlyName>
+    <includeOrgIdInIdentifier>false</includeOrgIdInIdentifier>
+    <providerType>OpenIdConnect</providerType>
+    <sendAccessTokenInHeader>true</sendAccessTokenInHeader>
+    <sendClientCredentialsInHeader>false</sendClientCredentialsInHeader>
+    <sendSecretInApis>true</sendSecretInApis>
+    <tokenUrl>https://account-d.docusign.com/OAuth/token</tokenUrl>
+</AuthProvider>

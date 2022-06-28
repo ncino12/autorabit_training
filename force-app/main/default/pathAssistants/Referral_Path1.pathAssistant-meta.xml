@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>nRE__Referral__c</entityName>
+    <fieldName>nRE__Referral_Status__c</fieldName>
+    <masterLabel>Referral Path1</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Disqualification_Reason__c</fieldNames>
+        <info>&lt;p&gt;If you are disqualifying the referral, kindly mark the disqualified checkbox.&lt;/p&gt;</info>
+        <picklistValueName>Closed</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Referral_New_Relationship</recordTypeName>
+</PathAssistant>

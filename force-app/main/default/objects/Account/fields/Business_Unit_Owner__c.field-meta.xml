@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business_Unit_Owner__c</fullName>
+    <externalId>false</externalId>
+    <label>Business Unit Owner</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Public Sector</fullName>
+                <default>false</default>
+                <label>Public Sector</label>
+            </value>
+            <value>
+                <fullName>Private Sector</fullName>
+                <default>false</default>
+                <label>Private Sector</label>
+            </value>
+            <value>
+                <fullName>Business Development, Strategy &amp; IESG</fullName>
+                <default>false</default>
+                <label>Business Development, Strategy &amp; IESG</label>
+            </value>
+            <value>
+                <fullName>Corporate Secretary, Communications,Public Affairs</fullName>
+                <default>false</default>
+                <label>Corporate Secretary, Communications,Public Affairs</label>
+            </value>
+            <value>
+                <fullName>Secretariat</fullName>
+                <default>false</default>
+                <label>Secretariat</label>
+            </value>
+            <value>
+                <fullName>Human Resources</fullName>
+                <default>false</default>
+                <label>Human Resources</label>
+            </value>
+            <value>
+                <fullName>Risk,Compliance &amp; IESG</fullName>
+                <default>false</default>
+                <label>Risk,Compliance &amp; IESG</label>
+            </value>
+            <value>
+                <fullName>Finance,Control &amp; Operations</fullName>
+                <default>false</default>
+                <label>Finance,Control &amp; Operations</label>
+            </value>
+            <value>
+                <fullName>IT &amp; Change</fullName>
+                <default>false</default>
+                <label>IT &amp; Change</label>
+            </value>
+            <value>
+                <fullName>Legal &amp; Procurement</fullName>
+                <default>false</default>
+                <label>Legal &amp; Procurement</label>
+            </value>
+            <value>
+                <fullName>Internal Audit</fullName>
+                <default>false</default>
+                <label>Internal Audit</label>
+            </value>
+            <value>
+                <fullName>Communications</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Communications</label>
+            </value>
+            <value>
+                <fullName>Finance</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Finance</label>
+            </value>
+            <value>
+                <fullName>Public Affairs</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Public Affairs</label>
+            </value>
+            <value>
+                <fullName>Strategy &amp; IESG</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Strategy &amp; IESG</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

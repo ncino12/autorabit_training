@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>World_Bank_Classification__c</name>
+    <picklistValues>
+        <masterLabel>HIC (High income country)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LIC (Low income country)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LMIC (Low middle income country)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UMIC (Upper-middle income country)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

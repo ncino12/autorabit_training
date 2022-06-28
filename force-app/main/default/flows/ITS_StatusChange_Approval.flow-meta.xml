@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>54.0</apiVersion>
+    <decisions>
+        <description>Created By Team</description>
+        <name>Decision_to_check_ITS_status_with_customer_Values</name>
+        <label>Decision to check ITS status with customer Values</label>
+        <locationX>446</locationX>
+        <locationY>335</locationY>
+        <defaultConnector>
+            <targetReference>Updating_Status_to_ITS_Adjustments_Required</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>If Adjustments required according to customer</defaultConnectorLabel>
+        <rules>
+            <name>If_Approved_By_Customer</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.ITS_status_with_customer__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Approved</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Updating_Status_to_ITS_Approved_By_Customer</targetReference>
+            </connector>
+            <label>If Approved By Customer</label>
+        </rules>
+        <rules>
+            <name>If_Declined_By_Customer</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.ITS_status_with_customer__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Declined</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Updating_Status_to_ITS_declined_by_Customer</targetReference>
+            </connector>
+            <label>If Declined By Customer</label>
+        </rules>
+        <rules>
+            <name>If_Submitted_to_Customer</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.ITS_status_with_customer__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Submitted</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Updating_Status_to_ITS_Submitted_to_Customer</targetReference>
+            </connector>
+            <label>If Submitted to Customer</label>
+        </rules>
+    </decisions>
+    <description>Created By Team</description>
+    <interviewLabel>ITS_StatusChange_Approval {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>ITS_StatusChange_Approval</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <description>Created By Team</description>
+        <name>Updating_Status_to_ITS_Adjustments_Required</name>
+        <label>Updating Status to ITS Adjustments Required</label>
+        <locationX>842</locationX>
+        <locationY>455</locationY>
+        <inputAssignments>
+            <field>LLC_BI__Status__c</field>
+            <value>
+                <stringValue>Adjustments required according to Customer</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Created By Team</description>
+        <name>Updating_Status_to_ITS_Approved_By_Customer</name>
+        <label>Updating Status to ITS Approved By Customer</label>
+        <locationX>50</locationX>
+        <locationY>455</locationY>
+        <inputAssignments>
+            <field>LLC_BI__Status__c</field>
+            <value>
+                <stringValue>ITS Approved by Customer</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Created By Team</description>
+        <name>Updating_Status_to_ITS_declined_by_Customer</name>
+        <label>Updating Status to ITS declined by Customer</label>
+        <locationX>314</locationX>
+        <locationY>455</locationY>
+        <inputAssignments>
+            <field>LLC_BI__Status__c</field>
+            <value>
+                <stringValue>ITS Declined by Customer</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Created By Team</description>
+        <name>Updating_Status_to_ITS_Submitted_to_Customer</name>
+        <label>Updating Status to ITS Submitted to Customer</label>
+        <locationX>578</locationX>
+        <locationY>455</locationY>
+        <inputAssignments>
+            <field>LLC_BI__Status__c</field>
+            <value>
+                <stringValue>ITS submitted to Customer</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>320</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Decision_to_check_ITS_status_with_customer_Values</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>ITS_status_with_customer__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>LLC_BI__Loan__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

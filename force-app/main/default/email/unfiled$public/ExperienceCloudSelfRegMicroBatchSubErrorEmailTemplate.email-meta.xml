@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Deze e-mailsjabloon is van toepassing op zelfregistratieverzoeken die worden verwerkt in batches nadat het verzoek is ingediend. De gebruiker ontvangt deze e-mail als zich een fout heeft voorgedaan bij het verwerken van zijn/haar zelfregistratieverzoek.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Experience Cloud: e-mail aan gebruiker over fout bij indienen microbatch voor zelfregistratie</name>
+    <style>none</style>
+    <subject>Uw registratie voor {!Community_Name} is mislukt</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>
