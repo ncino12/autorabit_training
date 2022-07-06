@@ -1128,6 +1128,7 @@
         <members>Installment__c.isPaymentHoliday__c</members>
         <members>Installment__c.paid_interest_amount__c</members>
         <members>Installment__c.paid_interest_tax__c</members>
+        <members>LLC_BI__Loan__c.Field_For_Autorabit_Training__c</members>
         <members>Lead.Address</members>
         <members>Lead.AnnualRevenue</members>
         <members>Lead.CampaignId</members>
