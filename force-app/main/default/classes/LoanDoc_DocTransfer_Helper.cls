@@ -19,6 +19,7 @@ public class LoanDoc_DocTransfer_Helper {
                 
                 documentLoanMap.put(loanDocument.Name+'##'+loanDocument.LLC_BI__Loan__c,loanDocument);
             }
+           //comment
             if(loanLoanDocName.containsKey(loanDocument.LLC_BI__Loan__c)){
                List<String> strldl= loanLoanDocName.get(loanDocument.LLC_BI__Loan__c);
                 strldl.add(loanDocument.Name);
